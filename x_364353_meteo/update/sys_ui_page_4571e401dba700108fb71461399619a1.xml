@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_364353_meteo_Weatherui.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="x_364353_meteo.weatheruiscript.jsdbx"></script>
+	
+	<!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
+      <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"></link>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	
+	
+	
+	<div  ng-app="weatherapp" ng-controller="WeatherAppCtrl">
+	<div class="center-align">
+	<div class="row">
+		<form class="col s12 l6">
+			
+            <div class="row">
+				<div class="input-field col s6 l3">
+						
+
+		 <input ng-model="myVar" placeholder="Example Mumbai" id="city" type="text" class="validate"></input>
+					
+					
+					<label for="city">Enter Any City</label>
+				   </div>
+				
+				<div class="input-field col s6 l3">
+					
+					<div  class="waves-effect waves-light btn" ng-click='getWeather()' ><i class="small material-icons">search</i></div>
+				   </div>
+				
+			</div>
+			
+		<div class="row">
+			<div class="col s6 l3">
+				<div>{{city}}</div>
+				   </div>
+			<div class="col s6 l3">
+				  <div>{{timezone}}</div>
+				   </div>
+			</div>	
+			
+			
+			<div class="row">
+				<div class="col s6 l3">
+					<div>{{summary}}</div>
+				   </div>
+				<div class="col s6 l3">
+						<div>{{temperature}}{{degree}}</div>
+					
+				   </div>
+				
+			</div>
+		</form>
+	</div>
+	
+		</div>
+		
+	</div>
+	
+	
+	
+	
+	  
+	
+
+</j:jelly>]]></html>
+        <name>Weatherui</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>code365</sys_created_by>
+        <sys_created_on>2020-03-12 15:38:52</sys_created_on>
+        <sys_id>4571e401dba700108fb71461399619a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Weatherui</sys_name>
+        <sys_package display_value="meteo" source="x_364353_meteo">09351278db2300108fb7146139961901</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="meteo">09351278db2300108fb7146139961901</sys_scope>
+        <sys_update_name>sys_ui_page_4571e401dba700108fb71461399619a1</sys_update_name>
+        <sys_updated_by>code365</sys_updated_by>
+        <sys_updated_on>2020-03-12 15:38:52</sys_updated_on>
+    </sys_ui_page>
+</record_update>

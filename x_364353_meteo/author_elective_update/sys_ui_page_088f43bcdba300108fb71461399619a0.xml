@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="DELETE">
+        <category/>
+        <client_script/>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_364353_meteo_weatheruipage.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="x_364353_meteo.weatheruiscript.jsdbx"></script>
+	
+	<!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
+      <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"></link>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	
+	
+	
+	<div  ng-app="weatherapp" ng-controller="WeatherAppCtrl">
+	<div class="center-align">
+	<div class="row">
+		<form class="col s12 l6">
+			
+            <div class="row">
+				<div class="input-field col s6 l3">
+						
+
+		 <input ng-model="myVar" placeholder="Example Mumbai" id="city" type="text" class="validate"></input>
+					
+					
+					<label for="city">Enter Any City</label>
+				   </div>
+				
+				<div class="input-field col s6 l3">
+					
+					<div  class="waves-effect waves-light btn" ng-click='getWeather()' ><i class="small material-icons">search</i></div>
+				   </div>
+				
+			</div>
+			
+		<div class="row">
+			<div class="col s6 l3">
+				<div>{{city}}</div>
+				   </div>
+			<div class="col s6 l3">
+				  <div>{{timezone}}</div>
+				   </div>
+			</div>	
+			
+			
+			<div class="row">
+				<div class="col s6 l3">
+					<div>{{summary}}</div>
+				   </div>
+				<div class="col s6 l3">
+						<div>{{temperature}}{{degree}}</div>
+					
+				   </div>
+				
+			</div>
+		</form>
+	</div>
+	
+		</div>
+		
+	</div>
+	
+	
+	
+	
+	  
+	
+
+</j:jelly>]]></html>
+        <name>weatheruipage</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>code365</sys_created_by>
+        <sys_created_on>2020-03-12 09:45:20</sys_created_on>
+        <sys_id>088f43bcdba300108fb71461399619a0</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>weatheruipage</sys_name>
+        <sys_package display_value="meteo" source="x_364353_meteo">09351278db2300108fb7146139961901</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="meteo">09351278db2300108fb7146139961901</sys_scope>
+        <sys_update_name>sys_ui_page_088f43bcdba300108fb71461399619a0</sys_update_name>
+        <sys_updated_by>code365</sys_updated_by>
+        <sys_updated_on>2020-03-12 14:18:16</sys_updated_on>
+    </sys_ui_page>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="meteo">09351278db2300108fb7146139961901</application>
+        <file_path/>
+        <instance_id>f7d9cb52dbba13003353f22ebf9619d8</instance_id>
+        <instance_name>dev62192</instance_name>
+        <name>sys_ui_page_088f43bcdba300108fb71461399619a0</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_page"&gt;&lt;sys_ui_page action="INSERT_OR_UPDATE"&gt;&lt;category/&gt;&lt;client_script/&gt;&lt;description/&gt;&lt;direct&gt;false&lt;/direct&gt;&lt;endpoint&gt;x_364353_meteo_weatheruipage.do&lt;/endpoint&gt;&lt;html&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null"&gt;
+	&lt;script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"&gt;&lt;/script&gt;
+	&lt;script src="x_364353_meteo.weatheruiscript.jsdbx"&gt;&lt;/script&gt;
+	
+	&lt;!--Import Google Icon Font--&gt;
+      &lt;link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"&gt;&lt;/link&gt;
+      &lt;!-- Compiled and minified CSS --&gt;
+    &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"&gt;&lt;/link&gt;
+      &lt;!--Let browser know website is optimized for mobile--&gt;
+      &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"/&gt;
+	    &lt;!-- Compiled and minified JavaScript --&gt;
+    &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"&gt;&lt;/script&gt;
+	
+	
+	
+	&lt;div  ng-app="weatherapp" ng-controller="WeatherAppCtrl"&gt;
+	&lt;div class="center-align"&gt;
+	&lt;div class="row"&gt;
+		&lt;form class="col s12 l6"&gt;
+			
+            &lt;div class="row"&gt;
+				&lt;div class="input-field col s6 l3"&gt;
+						
+
+		 &lt;input ng-model="myVar" placeholder="Example Mumbai" id="city" type="text" class="validate"&gt;&lt;/input&gt;
+					
+					
+					&lt;label for="city"&gt;Enter Any City&lt;/label&gt;
+				   &lt;/div&gt;
+				
+				&lt;div class="input-field col s6 l3"&gt;
+					
+					&lt;div  class="waves-effect waves-light btn" ng-click='getWeather()' &gt;&lt;i class="small material-icons"&gt;search&lt;/i&gt;&lt;/div&gt;
+				   &lt;/div&gt;
+				
+			&lt;/div&gt;
+			
+		&lt;div class="row"&gt;
+			&lt;div class="col s6 l3"&gt;
+				&lt;div&gt;{{city}}&lt;/div&gt;
+				   &lt;/div&gt;
+			&lt;div class="col s6 l3"&gt;
+				  &lt;div&gt;{{timezone}}&lt;/div&gt;
+				   &lt;/div&gt;
+			&lt;/div&gt;	
+			
+			
+			&lt;div class="row"&gt;
+				&lt;div class="col s6 l3"&gt;
+					&lt;div&gt;{{summary}}&lt;/div&gt;
+				   &lt;/div&gt;
+				&lt;div class="col s6 l3"&gt;
+						&lt;div&gt;{{temperature}}{{degree}}&lt;/div&gt;
+					
+				   &lt;/div&gt;
+				
+			&lt;/div&gt;
+		&lt;/form&gt;
+	&lt;/div&gt;
+	
+		&lt;/div&gt;
+		
+	&lt;/div&gt;
+	
+	
+	
+	
+	  
+	
+
+&lt;/j:jelly&gt;]]&gt;&lt;/html&gt;&lt;name&gt;weatheruipage&lt;/name&gt;&lt;processing_script/&gt;&lt;sys_class_name&gt;sys_ui_page&lt;/sys_class_name&gt;&lt;sys_created_by&gt;code365&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-12 09:45:20&lt;/sys_created_on&gt;&lt;sys_id&gt;088f43bcdba300108fb71461399619a0&lt;/sys_id&gt;&lt;sys_mod_count&gt;14&lt;/sys_mod_count&gt;&lt;sys_name&gt;weatheruipage&lt;/sys_name&gt;&lt;sys_package display_value="meteo" source="x_364353_meteo"&gt;09351278db2300108fb7146139961901&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="meteo"&gt;09351278db2300108fb7146139961901&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_page_088f43bcdba300108fb71461399619a0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;code365&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-12 14:18:16&lt;/sys_updated_on&gt;&lt;/sys_ui_page&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1203854075</payload_hash>
+        <record_name>weatheruipage</record_name>
+        <reverted_from/>
+        <source>4d351278db2300108fb7146139961903</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>code365</sys_created_by>
+        <sys_created_on>2020-03-12 14:18:16</sys_created_on>
+        <sys_id>f02f0845db6700108fb71461399619cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>170cf1c32720000001</sys_recorded_at>
+        <sys_updated_by>code365</sys_updated_by>
+        <sys_updated_on>2020-03-12 14:18:16</sys_updated_on>
+        <type>UI Page</type>
+        <update_guid>7c2f08459e670010f2e78daa2cc4fece</update_guid>
+        <update_guid_history>7c2f08459e670010f2e78daa2cc4fece:-1203854075,591f84455c670010b9a630d109944ada:-1387296269,01fecc055f670010c0837018ae8eed08:-2055534715,ad2c48819767001096da6f885fcf5140:-1203854075,894b8081f5670010325b15e20affcedd:-1642147158,d5cac441aa6700109ac4c3b696db5e1d:-1203854075,308a4041486700109e34b06734913ecf:-1880174273,4cb833748d270010bfd997093a44b364:-664194348,eaf5b7f0ae27001072cd03ef9e8900ae:-188779959,cfbd9fb4b6e30010f9906c329f46e6b2:-1845567617,6c7d5bb4ade30010cd266e7cf90e9a24:133472813,52ab1b7461e300108e1d4210083b994c:-1845567617,65a9173436e3001043d169aa55c44355:133472813,24029bbce7a300108e3b1f813cb5f6db:1326709091,76a05b7ce1a300106172bdd400b6b6f9:-824425147</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>code365</sys_created_by>
+        <sys_created_on>2020-03-12 15:38:04</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_page">sys_ui_page</sys_db_object>
+        <sys_id>4ff0a248f92a4182abacb06d71f9beb9</sys_id>
+        <sys_metadata>088f43bcdba300108fb71461399619a0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>weatheruipage</sys_name>
+        <sys_package display_value="meteo" source="x_364353_meteo">09351278db2300108fb7146139961901</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="meteo">09351278db2300108fb7146139961901</sys_scope>
+        <sys_scope_delete display_value="">7b1cc32c27ed4800a4b522905f05e100</sys_scope_delete>
+        <sys_update_name>sys_ui_page_088f43bcdba300108fb71461399619a0</sys_update_name>
+        <sys_update_version display_value="sys_ui_page_088f43bcdba300108fb71461399619a0">f02f0845db6700108fb71461399619cf</sys_update_version>
+        <sys_updated_by>code365</sys_updated_by>
+        <sys_updated_on>2020-03-12 15:38:04</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
