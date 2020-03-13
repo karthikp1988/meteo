@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>false</active>
+        <api_name>x_364353_meteo.meteosi</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>meteosi</name>
+        <script><![CDATA[var meteosi = Class.create();
+meteosi.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    
+	getWeatherInfo : function(){
+		
+		
+		var inputs = {};
+		inputs['location'] = "chennai"; // String 
+
+		// Start Asynchronously: Uncomment to run in background. Code snippet will not have access to outputs.
+		// sn_fd.FlowAPI.startAction('x_364353_weather.get_weather_data', inputs);
+				
+		// Execute Synchronously: Run in foreground. Code snippet has access to outputs.
+			var outputs = sn_fd.FlowAPI.executeAction('x_364353_meteo.get_meteo_info', inputs);
+
+		// Get Outputs:
+		// Note: outputs can only be retrieved when executing synchronously.
+		
+	//var summary = outputs['summary']; // String
+		//var temperature = outputs['temperature']; // Decimal
+		//var timezone = outputs['timezone']; // String
+		
+var results = {
+city : outputs['city'] ,
+  temp :outputs['temperature'] ,
+sum : outputs['summary'] ,
+tz : outputs['timezone'], 
+	};
+		return JSON.stringify(results);
+		
+	},
+	
+
+	isPublic: function(){
+		
+		return true;
+	},
+	
+	
+	
+	
+	
+    type: 'meteosi'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>code365</sys_created_by>
+        <sys_created_on>2020-03-12 07:25:27</sys_created_on>
+        <sys_id>1bafeab8db6300108fb714613996191a</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>meteosi</sys_name>
+        <sys_package display_value="meteo" source="x_364353_meteo">09351278db2300108fb7146139961901</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="meteo">09351278db2300108fb7146139961901</sys_scope>
+        <sys_update_name>sys_script_include_1bafeab8db6300108fb714613996191a</sys_update_name>
+        <sys_updated_by>code365</sys_updated_by>
+        <sys_updated_on>2020-03-12 09:09:40</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="meteo">09351278db2300108fb7146139961901</application>
+        <file_path/>
+        <instance_id>f7d9cb52dbba13003353f22ebf9619d8</instance_id>
+        <instance_name>dev62192</instance_name>
+        <name>sys_script_include_1bafeab8db6300108fb714613996191a</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;false&lt;/active&gt;&lt;api_name&gt;x_364353_meteo.meteosi&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;meteosi&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var meteosi = Class.create();
+meteosi.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    
+	getWeatherInfo : function(){
+		
+		
+		var inputs = {};
+		inputs['location'] = "chennai"; // String 
+
+		// Start Asynchronously: Uncomment to run in background. Code snippet will not have access to outputs.
+		// sn_fd.FlowAPI.startAction('x_364353_weather.get_weather_data', inputs);
+				
+		// Execute Synchronously: Run in foreground. Code snippet has access to outputs.
+			var outputs = sn_fd.FlowAPI.executeAction('x_364353_meteo.get_meteo_info', inputs);
+
+		// Get Outputs:
+		// Note: outputs can only be retrieved when executing synchronously.
+		
+	//var summary = outputs['summary']; // String
+		//var temperature = outputs['temperature']; // Decimal
+		//var timezone = outputs['timezone']; // String
+		
+var results = {
+city : outputs['city'] ,
+  temp :outputs['temperature'] ,
+sum : outputs['summary'] ,
+tz : outputs['timezone'], 
+	};
+		return JSON.stringify(results);
+		
+	},
+	
+
+	isPublic: function(){
+		
+		return true;
+	},
+	
+	
+	
+	
+	
+    type: 'meteosi'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;code365&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-03-12 07:25:27&lt;/sys_created_on&gt;&lt;sys_id&gt;1bafeab8db6300108fb714613996191a&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;meteosi&lt;/sys_name&gt;&lt;sys_package display_value="meteo" source="x_364353_meteo"&gt;09351278db2300108fb7146139961901&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="meteo"&gt;09351278db2300108fb7146139961901&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_1bafeab8db6300108fb714613996191a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;code365&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-03-12 09:09:40&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1724203168</payload_hash>
+        <record_name>meteosi</record_name>
+        <reverted_from/>
+        <source>4d351278db2300108fb7146139961903</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>code365</sys_created_by>
+        <sys_created_on>2020-03-12 09:09:40</sys_created_on>
+        <sys_id>d48803b8dba300108fb714613996194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>170ce01ab970000001</sys_recorded_at>
+        <sys_updated_by>code365</sys_updated_by>
+        <sys_updated_on>2020-03-12 09:09:40</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>508803b815a30010cda08b0f2505c04f</update_guid>
+        <update_guid_history>508803b815a30010cda08b0f2505c04f:-1724203168,d8793a3034a300104aa95743ff8cb83e:381100724,4057f63cf5630010c6dfac86c37b16a9:2004751586,d7127eb897630010311185326084c63a:1453853326,25a0f6b8d6630010aac68dd1dffa4cde:-1574795359</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>code365</sys_created_by>
+        <sys_created_on>2020-03-12 09:12:20</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>07edb0453478416c832eb787b39711c4</sys_id>
+        <sys_metadata>1bafeab8db6300108fb714613996191a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>meteosi</sys_name>
+        <sys_package display_value="meteo" source="x_364353_meteo">09351278db2300108fb7146139961901</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="meteo">09351278db2300108fb7146139961901</sys_scope>
+        <sys_scope_delete display_value="">7b1cc32c27ed4800a4b522905f05e100</sys_scope_delete>
+        <sys_update_name>sys_script_include_1bafeab8db6300108fb714613996191a</sys_update_name>
+        <sys_update_version display_value="sys_script_include_1bafeab8db6300108fb714613996191a">d48803b8dba300108fb714613996194f</sys_update_version>
+        <sys_updated_by>code365</sys_updated_by>
+        <sys_updated_on>2020-03-12 09:12:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_script">
+    <sys_ui_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <global>false</global>
+        <name>x_364353_meteo.weatheruiscript</name>
+        <script><![CDATA[angular.module('weatherapp',[]);
+angular.module('weatherapp').controller('WeatherAppCtrl', function($scope){
+
+$scope.getWeather = function(){ 
+
+
+	var ga = new GlideAjax('Weather');
+	ga.addParam('sysparm_name','getWeatherInfo');
+	ga.addParam('sysparm_location',$scope.myVar);
+	ga.getXMLWait();
+	
+	var answer = ga.getAnswer();
+	var weather= JSON.parse(answer);
+
+     $scope.city = weather.city;
+	 $scope.temperature = weather.temp;
+     $scope.summary = weather.sum;
+	 $scope.timezone =weather.tz;
+     $scope.degree ="°F";
+		
+	
+	
+};
+	
+	
+	
+});	
+	
+	
+	
+	
+
+]]></script>
+        <script_name>weatheruiscript</script_name>
+        <sys_class_name>sys_ui_script</sys_class_name>
+        <sys_created_by>code365</sys_created_by>
+        <sys_created_on>2020-03-12 09:26:23</sys_created_on>
+        <sys_id>f83cc33cdba300108fb71461399619ae</sys_id>
+        <sys_mod_count>31</sys_mod_count>
+        <sys_name>x_364353_meteo.weatheruiscript</sys_name>
+        <sys_package display_value="meteo" source="x_364353_meteo">09351278db2300108fb7146139961901</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="meteo">09351278db2300108fb7146139961901</sys_scope>
+        <sys_update_name>sys_ui_script_f83cc33cdba300108fb71461399619ae</sys_update_name>
+        <sys_updated_by>code365</sys_updated_by>
+        <sys_updated_on>2020-03-12 13:51:16</sys_updated_on>
+        <ui_type>10</ui_type>
+        <use_scoped_format>false</use_scoped_format>
+    </sys_ui_script>
+</record_update>

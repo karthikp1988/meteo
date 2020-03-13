@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_public">
+    <sys_public action="DELETE">
+        <active>true</active>
+        <page>x_364353_meteo_weatheruipage.do</page>
+        <sys_class_name>sys_public</sys_class_name>
+        <sys_created_by>code365</sys_created_by>
+        <sys_created_on>2020-03-12 10:13:42</sys_created_on>
+        <sys_id>7fe69bb0dbe300108fb7146139961926</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_364353_meteo_weatheruipage.do</sys_name>
+        <sys_package display_value="meteo" source="x_364353_meteo">09351278db2300108fb7146139961901</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="meteo">09351278db2300108fb7146139961901</sys_scope>
+        <sys_update_name>sys_public_7fe69bb0dbe300108fb7146139961926</sys_update_name>
+        <sys_updated_by>code365</sys_updated_by>
+        <sys_updated_on>2020-03-12 14:00:58</sys_updated_on>
+    </sys_public>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="meteo">09351278db2300108fb7146139961901</application>
+        <file_path/>
+        <instance_id>f7d9cb52dbba13003353f22ebf9619d8</instance_id>
+        <instance_name>dev62192</instance_name>
+        <name>sys_public_7fe69bb0dbe300108fb7146139961926</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_public"><sys_public action="INSERT_OR_UPDATE"><active>true</active><page>x_364353_meteo_weatheruipage.do</page><sys_class_name>sys_public</sys_class_name><sys_created_by>code365</sys_created_by><sys_created_on>2020-03-12 10:13:42</sys_created_on><sys_id>7fe69bb0dbe300108fb7146139961926</sys_id><sys_mod_count>1</sys_mod_count><sys_name>x_364353_meteo_weatheruipage.do</sys_name><sys_package display_value="meteo" source="x_364353_meteo">09351278db2300108fb7146139961901</sys_package><sys_policy/><sys_scope display_value="meteo">09351278db2300108fb7146139961901</sys_scope><sys_update_name>sys_public_7fe69bb0dbe300108fb7146139961926</sys_update_name><sys_updated_by>code365</sys_updated_by><sys_updated_on>2020-03-12 14:00:58</sys_updated_on></sys_public></record_update>]]></payload>
+        <payload_hash>1401717005</payload_hash>
+        <record_name>x_364353_meteo_weatheruipage.do</record_name>
+        <reverted_from/>
+        <source>4d351278db2300108fb7146139961903</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>code365</sys_created_by>
+        <sys_created_on>2020-03-12 14:00:58</sys_created_on>
+        <sys_id>9b2b4441db6700108fb71461399619fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>170cf0c5c0a0000001</sys_recorded_at>
+        <sys_updated_by>code365</sys_updated_by>
+        <sys_updated_on>2020-03-12 14:00:58</sys_updated_on>
+        <type>Public Pages</type>
+        <update_guid>172b44417c670010927b9b813fa81bfc</update_guid>
+        <update_guid_history>172b44417c670010927b9b813fa81bfc:1401717005,56271fb0fde300107b8eab07ed4bc26c:638388295</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>code365</sys_created_by>
+        <sys_created_on>2020-03-12 14:01:57</sys_created_on>
+        <sys_db_object display_value="" name="sys_public">sys_public</sys_db_object>
+        <sys_id>1da7779cc3fc48b1a169a30b28cac289</sys_id>
+        <sys_metadata>7fe69bb0dbe300108fb7146139961926</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_364353_meteo_weatheruipage.do</sys_name>
+        <sys_package display_value="meteo" source="x_364353_meteo">09351278db2300108fb7146139961901</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="meteo">09351278db2300108fb7146139961901</sys_scope>
+        <sys_scope_delete display_value="">7b1cc32c27ed4800a4b522905f05e100</sys_scope_delete>
+        <sys_update_name>sys_public_7fe69bb0dbe300108fb7146139961926</sys_update_name>
+        <sys_update_version display_value="sys_public_7fe69bb0dbe300108fb7146139961926">9b2b4441db6700108fb71461399619fc</sys_update_version>
+        <sys_updated_by>code365</sys_updated_by>
+        <sys_updated_on>2020-03-12 14:01:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
